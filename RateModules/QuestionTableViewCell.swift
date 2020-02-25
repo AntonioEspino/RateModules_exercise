@@ -17,17 +17,19 @@ class QuestionTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var isPassedSwitch: UISwitch!
+    @IBOutlet weak var position: UILabel!
     
     @IBAction func didToggleSwitch(_ sender: UISwitch) {
         guard let question = question else { return }
         delegate?.didToggleSwitch(for: question, value: isPassedSwitch.isOn)
     }
     
-    func configure(with question: Question) {
+    func configure(with question: Question, indexPosition:Int, maxPosition:Int ) {
         self.question = question
         titleLabel.text = question.title
         descriptionLabel.text = question.description
         isPassedSwitch.isOn = question.isPassed
+        position.text = "\(indexPosition)/\(maxPosition)"
     }
     
 }

@@ -19,6 +19,7 @@
 		0BF7809523DE363A007F8E8E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF7809423DE363A007F8E8E /* State.swift */; };
 		0BF7809723DE3D4E007F8E8E /* RateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */; };
 		0BF7809923DE3FD2007F8E8E /* RateResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */; };
+		710E99DC2404925D002DE0A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E99DB2404925D002DE0A5 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0BF7809423DE363A007F8E8E /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCalculator.swift; sourceTree = "<group>"; };
 		0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResultsViewController.swift; sourceTree = "<group>"; };
+		710E99DB2404925D002DE0A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,21 +70,46 @@
 		0BDF872A23DE04E500FD9083 /* RateModules */ = {
 			isa = PBXGroup;
 			children = (
-				0BDF872B23DE04E500FD9083 /* AppDelegate.swift */,
-				0BDF872D23DE04E500FD9083 /* SceneDelegate.swift */,
-				0BDF872F23DE04E500FD9083 /* RateModuleViewController.swift */,
+				710E99DA24045E03002DE0A5 /* Model */,
+				710E99D9240458DA002DE0A5 /* View Controlers */,
+				710E99D8240458CC002DE0A5 /* Support files */,
 				0BDF873123DE04E500FD9083 /* Main.storyboard */,
-				0BDF873423DE04E700FD9083 /* Assets.xcassets */,
-				0BDF873623DE04E700FD9083 /* LaunchScreen.storyboard */,
-				0BDF873923DE04E700FD9083 /* Info.plist */,
-				0BEE035B23DE0A08007C9E35 /* QuestionTableViewCell.swift */,
-				0BF7809023DE0C3C007F8E8E /* Question.swift */,
-				0BF7809223DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift */,
-				0BF7809423DE363A007F8E8E /* State.swift */,
-				0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */,
-				0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */,
 			);
 			path = RateModules;
+			sourceTree = "<group>";
+		};
+		710E99D8240458CC002DE0A5 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				0BDF872D23DE04E500FD9083 /* SceneDelegate.swift */,
+				0BDF872B23DE04E500FD9083 /* AppDelegate.swift */,
+				0BDF873423DE04E700FD9083 /* Assets.xcassets */,
+				0BDF873923DE04E700FD9083 /* Info.plist */,
+				0BDF873623DE04E700FD9083 /* LaunchScreen.storyboard */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		710E99D9240458DA002DE0A5 /* View Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */,
+				0BEE035B23DE0A08007C9E35 /* QuestionTableViewCell.swift */,
+				0BDF872F23DE04E500FD9083 /* RateModuleViewController.swift */,
+				710E99DB2404925D002DE0A5 /* RegisterViewController.swift */,
+				0BF7809223DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift */,
+			);
+			name = "View Controlers";
+			sourceTree = "<group>";
+		};
+		710E99DA24045E03002DE0A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */,
+				0BF7809423DE363A007F8E8E /* State.swift */,
+				0BF7809023DE0C3C007F8E8E /* Question.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF7809123DE0C3C007F8E8E /* Question.swift in Sources */,
+				710E99DC2404925D002DE0A5 /* RegisterViewController.swift in Sources */,
 				0BF7809923DE3FD2007F8E8E /* RateResultsViewController.swift in Sources */,
 				0BDF873023DE04E500FD9083 /* RateModuleViewController.swift in Sources */,
 				0BF7809323DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift in Sources */,
