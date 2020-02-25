@@ -14,12 +14,18 @@ class RegisterViewController: UIViewController {
     var optionChosed:Module = .module2A
     
     @IBOutlet weak var studentNameTextField: UITextField!
+    @IBOutlet weak var startRatingOutlet: UIButton!
     
     @IBAction func startRatingButton(_ sender: UIButton) {
         performSegue(withIdentifier: RateModuleViewController.showRateModuleSegue, sender: self)
     }
     @IBAction func tapWhenWriting(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
+        if studentNameTextField.text == "" {
+                  startRatingOutlet.isEnabled = false
+              }else{
+                  startRatingOutlet.isEnabled = true
+              }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,7 @@ class RegisterViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         studentNameTextField.text = ""
+        startRatingOutlet.isEnabled = false
     }
     // MARK: - Navigation
 
@@ -65,6 +72,12 @@ extension RegisterViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        if studentNameTextField.text == "" {
+            startRatingOutlet.isEnabled = false
+        }else{
+            startRatingOutlet.isEnabled = true
+        }
+        
         return	true
     }
 }

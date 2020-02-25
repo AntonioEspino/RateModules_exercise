@@ -294,6 +294,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Result" id="v21-w3-LIt"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="startRatingOutlet" destination="GZ5-KE-7kh" id="GJx-dC-DSK"/>
                         <outlet property="studentNameTextField" destination="EpT-dV-Bl1" id="pl3-9W-4ao"/>
                         <segue destination="saZ-Bz-K9g" kind="show" identifier="showRateModule" id="z3k-wy-g8y"/>
                     </connections>
