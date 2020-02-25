@@ -97,12 +97,10 @@
 		710E99D9240458DA002DE0A5 /* View Controlers */ = {
 			isa = PBXGroup;
 			children = (
-				71355B032405811400397741 /* ResultsViewController.swift */,
-				0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */,
-				0BEE035B23DE0A08007C9E35 /* QuestionTableViewCell.swift */,
-				0BDF872F23DE04E500FD9083 /* RateModuleViewController.swift */,
 				710E99DB2404925D002DE0A5 /* RegisterViewController.swift */,
-				0BF7809223DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift */,
+				0BDF872F23DE04E500FD9083 /* RateModuleViewController.swift */,
+				0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */,
+				71355B032405811400397741 /* ResultsViewController.swift */,
 			);
 			name = "View Controlers";
 			sourceTree = "<group>";
@@ -114,6 +112,8 @@
 				0BF7809423DE363A007F8E8E /* State.swift */,
 				71355B052405BAF200397741 /* Result.swift */,
 				0BF7809023DE0C3C007F8E8E /* Question.swift */,
+				0BF7809223DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift */,
+				0BEE035B23DE0A08007C9E35 /* QuestionTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";

@@ -13,6 +13,7 @@ class RateResultsViewController: UIViewController {
     var rateCalculator: RateCalculator?
     var studentName: String?
     var optionChosed: Module?
+    var result =  Result ()
 
     @IBOutlet weak var resultEmojiLabel: UILabel!
     @IBOutlet weak var rateAsPercentLabel: UILabel!
@@ -50,6 +51,21 @@ class RateResultsViewController: UIViewController {
         requirementsRatioLabel.text = "Preguntas de requisitos: \(rateCalculator.numberOfRightlyAnsweredRequirementQuestions)/\(rateCalculator.numberOfRequirementQuestions)"
         codeStructureRatioLabel.text = "Preguntas de estructura de código: \(rateCalculator.numberOfRightlyAnsweredCodeStructureQuestions)/\(rateCalculator.numberOfCodeStructureQuestions)"
         cleanCodeRatioLabel.text = "Preguntas de código limpio: \(rateCalculator.numberOfRightlyAnsweredCleanCodeQuestions)/\(rateCalculator.numberOfCleanCodeQuestions)"
+        
+        
+        result.name = studentName ?? ""
+        result.module = optionChosed?.rawValue ?? ""
+        result.emoji = resultEmojiLabel.text!
+        result.rate = String(rateCalculator.totalRatio*100)
+        print(result)
+        saveStudent(noteStudent: result)
     }
+
+    func saveStudent(noteStudent: Result) {
+         var listStudents: [Result] = Result.loadFromFile()
+         listStudents.append(noteStudent)
+         print(listStudents)
+        Result.saveToFile(results: listStudents)
+     }
     
 }

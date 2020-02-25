@@ -14,6 +14,13 @@ struct Result {
     var module: String
     var emoji: String
     var rate: String
+    
+    init (){
+        self.name = ""
+        self.module = ""
+        self.emoji = ""
+        self.rate = ""
+    }
 }
 
 extension Result: Codable {
@@ -23,9 +30,9 @@ extension Result: Codable {
                                  in: .userDomainMask).first!.appendingPathComponent("Documents")
             .appendingPathExtension("plist")
     
-    static func saveToFile(rates: [Result]) {
+    static func saveToFile(results: [Result]) {
         let propertyListEncoder = PropertyListEncoder()
-        let encodedRates = try? propertyListEncoder.encode(rates)
+        let encodedRates = try? propertyListEncoder.encode(results)
         
         try? encodedRates?.write(to: Result.archiveURL, options: .noFileProtection)
         
