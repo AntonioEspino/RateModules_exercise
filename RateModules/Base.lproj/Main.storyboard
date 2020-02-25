@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eki-ee-zi8">
-                                <rect key="frame" x="67.5" y="192" width="240.5" height="239"/>
+                                <rect key="frame" x="67.5" y="177" width="240.5" height="269"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-wN-nBB">
                                         <rect key="frame" x="0.0" y="0.0" width="240.5" height="36"/>
@@ -129,38 +129,44 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bB-zv-xbo" userLabel="module">
+                                        <rect key="frame" x="0.0" y="36" width="240.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x19-Pa-B1T">
-                                        <rect key="frame" x="0.0" y="36" width="240.5" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="66" width="240.5" height="100.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="84"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8k-iY-JEB">
-                                        <rect key="frame" x="0.0" y="136.5" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="166.5" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de diseño: 3/5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji6-AB-wt5">
-                                        <rect key="frame" x="0.0" y="157" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="187" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de requisitos: 4/5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-Td-dJK">
-                                        <rect key="frame" x="0.0" y="177.5" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="207.5" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de estructura: 2/4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-Pf-9Zm">
-                                        <rect key="frame" x="0.0" y="198" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="228" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de código limpio: 1/3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kso-XL-uvQ">
-                                        <rect key="frame" x="0.0" y="218.5" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="248.5" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -191,6 +197,7 @@
                         <outlet property="rateAsPercentLabel" destination="m8k-iY-JEB" id="Xvn-32-a7G"/>
                         <outlet property="requirementsRatioLabel" destination="pHX-Td-dJK" id="J4h-Sv-SdR"/>
                         <outlet property="resultEmojiLabel" destination="x19-Pa-B1T" id="iA4-w9-vhb"/>
+                        <outlet property="showModule" destination="2bB-zv-xbo" id="zTs-m0-phI"/>
                         <outlet property="showStudentName" destination="tYk-wN-nBB" id="EEx-5S-6pG"/>
                     </connections>
                 </viewController>
@@ -291,7 +298,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Student" id="ea5-6o-g6m">
-                        <barButtonItem key="rightBarButtonItem" title="Result" id="v21-w3-LIt"/>
+                        <barButtonItem key="rightBarButtonItem" title="Result" id="v21-w3-LIt">
+                            <connections>
+                                <segue destination="n4j-Ll-3uv" kind="show" identifier="showResults" id="iwG-X0-O5w"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="startRatingOutlet" destination="GZ5-KE-7kh" id="GJx-dC-DSK"/>
@@ -325,6 +336,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNs-jl-MhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-519.20000000000005" y="-287.40629685157421"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fgU-si-SyL">
+            <objects>
+                <viewController id="n4j-Ll-3uv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qoJ-1Z-WOd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q5g-Za-3JI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ywW-tv-a9O" firstAttribute="trailing" secondItem="Q5g-Za-3JI" secondAttribute="trailing" id="OSr-ai-GYy"/>
+                            <constraint firstItem="ywW-tv-a9O" firstAttribute="bottom" secondItem="Q5g-Za-3JI" secondAttribute="bottom" id="cg0-ct-CPS"/>
+                            <constraint firstItem="Q5g-Za-3JI" firstAttribute="top" secondItem="ywW-tv-a9O" secondAttribute="top" id="jDF-uj-FLC"/>
+                            <constraint firstItem="Q5g-Za-3JI" firstAttribute="leading" secondItem="ywW-tv-a9O" secondAttribute="leading" id="lfK-lH-GG6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ywW-tv-a9O"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BQt-cN-B7U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXh-TG-Kd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="-983"/>
         </scene>
     </scenes>
 </document>

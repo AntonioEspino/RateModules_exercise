@@ -10,32 +10,44 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+    // MARK : - GlobalsVar
+    
     let modules: [Module] = [.module2A, .module2B , .module3A, .module3B]
-    var optionChosed:Module = .module2A
+    var optionChosed:Module?
+    
+    // MARK : - Outlets
     
     @IBOutlet weak var studentNameTextField: UITextField!
     @IBOutlet weak var startRatingOutlet: UIButton!
+    
+    // MARK : - Actions
     
     @IBAction func startRatingButton(_ sender: UIButton) {
         performSegue(withIdentifier: RateModuleViewController.showRateModuleSegue, sender: self)
     }
     @IBAction func tapWhenWriting(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
-        if studentNameTextField.text == "" {
-                  startRatingOutlet.isEnabled = false
-              }else{
-                  startRatingOutlet.isEnabled = true
-              }
+        updateUI()
     }
+    
+     // MARK : - ViewControler Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         studentNameTextField.delegate = self
-       
+        updateUI()
     }
-    override func viewWillAppear(_ animated: Bool) {
-        studentNameTextField.text = ""
-        startRatingOutlet.isEnabled = false
-    }
+
+     // MARK : - Update UI
+    
+    func updateUI () {
+           if studentNameTextField.text == "" {
+                        startRatingOutlet.isEnabled = false
+                    }else{
+                        startRatingOutlet.isEnabled = true
+                    }
+       }
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -45,11 +57,13 @@ class RegisterViewController: UIViewController {
         rateModuleViewController.studentName = studentNameTextField.text
     }
     @IBAction func unwindToRegister(unwindSegue: UIStoryboardSegue) {
-        
-    }
-    
+        studentNameTextField.text = ""
+        startRatingOutlet.isEnabled = false    }
 
 }
+
+// MARK : - DatePickerDelegate
+
 extension RegisterViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -62,22 +76,16 @@ extension RegisterViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         return modules.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
         optionChosed = modules[row]
-      
     }
 }
 
+// MARK : - TextFieldDelegate
+
 extension RegisterViewController: UITextFieldDelegate {
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        if studentNameTextField.text == "" {
-            startRatingOutlet.isEnabled = false
-        }else{
-            startRatingOutlet.isEnabled = true
-        }
-        
+        updateUI()
         return	true
     }
 }

@@ -14,14 +14,16 @@ class RateModuleViewController: UITableViewController {
     var state = State(module: Module.module3B)
     var optionChosed: Module?
     var studentName: String?
+   
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
         if let optionChosed = optionChosed {
             state = State(module: optionChosed)
-            navigationItem.title = studentName
+            navigationItem.title = "\(optionChosed.rawValue) - \(studentName ?? "no name")"
         }
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     private func update(selectedQuestion: Question, with value: Bool) {
@@ -62,6 +64,7 @@ class RateModuleViewController: UITableViewController {
                 numberOfCleanCodeQuestions: state.cleanCodeQuestions.count,
                 numberOfRightlyAnsweredCleanCodeQuestions: state.cleanCodeQuestions.filter { $0.isPassed }.count)
             destination.studentName = studentName
+            destination.optionChosed = optionChosed
                 
         }
     }

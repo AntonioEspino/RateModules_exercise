@@ -20,12 +20,11 @@ struct State {
     var requirementsQuestions: [Question]
     var codeStructureQuestions: [Question]
     var cleanCodeQuestions: [Question]
-    
     var hasDesignSection: Bool {
         return designQuestions != nil
     }
     
-    init(module: Module) {
+    init(module: Module) {       
         switch module {
         case .module3B:
             designQuestions = [

@@ -20,6 +20,8 @@
 		0BF7809723DE3D4E007F8E8E /* RateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */; };
 		0BF7809923DE3FD2007F8E8E /* RateResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */; };
 		710E99DC2404925D002DE0A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E99DB2404925D002DE0A5 /* RegisterViewController.swift */; };
+		71355B042405811400397741 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71355B032405811400397741 /* ResultsViewController.swift */; };
+		71355B062405BAF200397741 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71355B052405BAF200397741 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCalculator.swift; sourceTree = "<group>"; };
 		0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateResultsViewController.swift; sourceTree = "<group>"; };
 		710E99DB2404925D002DE0A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		71355B032405811400397741 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		71355B052405BAF200397741 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		710E99D9240458DA002DE0A5 /* View Controlers */ = {
 			isa = PBXGroup;
 			children = (
+				71355B032405811400397741 /* ResultsViewController.swift */,
 				0BF7809823DE3FD2007F8E8E /* RateResultsViewController.swift */,
 				0BEE035B23DE0A08007C9E35 /* QuestionTableViewCell.swift */,
 				0BDF872F23DE04E500FD9083 /* RateModuleViewController.swift */,
@@ -107,6 +112,7 @@
 			children = (
 				0BF7809623DE3D4E007F8E8E /* RateCalculator.swift */,
 				0BF7809423DE363A007F8E8E /* State.swift */,
+				71355B052405BAF200397741 /* Result.swift */,
 				0BF7809023DE0C3C007F8E8E /* Question.swift */,
 			);
 			name = Model;
@@ -183,12 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71355B042405811400397741 /* ResultsViewController.swift in Sources */,
 				0BF7809123DE0C3C007F8E8E /* Question.swift in Sources */,
 				710E99DC2404925D002DE0A5 /* RegisterViewController.swift in Sources */,
 				0BF7809923DE3FD2007F8E8E /* RateResultsViewController.swift in Sources */,
 				0BDF873023DE04E500FD9083 /* RateModuleViewController.swift in Sources */,
 				0BF7809323DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift in Sources */,
 				0BEE035C23DE0A08007C9E35 /* QuestionTableViewCell.swift in Sources */,
+				71355B062405BAF200397741 /* Result.swift in Sources */,
 				0BDF872C23DE04E500FD9083 /* AppDelegate.swift in Sources */,
 				0BF7809723DE3D4E007F8E8E /* RateCalculator.swift in Sources */,
 				0BF7809523DE363A007F8E8E /* State.swift in Sources */,

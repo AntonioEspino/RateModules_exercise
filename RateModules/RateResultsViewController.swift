@@ -12,6 +12,7 @@ class RateResultsViewController: UIViewController {
     
     var rateCalculator: RateCalculator?
     var studentName: String?
+    var optionChosed: Module?
 
     @IBOutlet weak var resultEmojiLabel: UILabel!
     @IBOutlet weak var rateAsPercentLabel: UILabel!
@@ -20,6 +21,7 @@ class RateResultsViewController: UIViewController {
     @IBOutlet weak var codeStructureRatioLabel: UILabel!
     @IBOutlet weak var cleanCodeRatioLabel: UILabel!
     @IBOutlet weak var showStudentName: UILabel!
+    @IBOutlet weak var showModule: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,7 @@ class RateResultsViewController: UIViewController {
             resultEmojiLabel.text = "😔"
         }
         showStudentName.text = studentName
+        showModule.text = optionChosed?.rawValue
         navigationItem.hidesBackButton = true
         rateAsPercentLabel.text = NSString.init(format: "%.2f", rateCalculator.rateAsPercent) as String + " %"
         if !rateCalculator.hasPassed {
@@ -48,7 +51,5 @@ class RateResultsViewController: UIViewController {
         codeStructureRatioLabel.text = "Preguntas de estructura de código: \(rateCalculator.numberOfRightlyAnsweredCodeStructureQuestions)/\(rateCalculator.numberOfCodeStructureQuestions)"
         cleanCodeRatioLabel.text = "Preguntas de código limpio: \(rateCalculator.numberOfRightlyAnsweredCleanCodeQuestions)/\(rateCalculator.numberOfCleanCodeQuestions)"
     }
-//    override func performSegue(withIdentifier identifier: String, sender: Any?) {
-//        <#code#>
-//    }
+    
 }
