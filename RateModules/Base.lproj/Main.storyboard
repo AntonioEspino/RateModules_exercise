@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="saZ-Bz-K9g">
-    <device id="retina4_7" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pw-vU-3WB">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,18 @@
             <objects>
                 <tableViewController id="saZ-Bz-K9g" customClass="RateModuleViewController" customModule="RateModules" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zua-lv-U7U">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RateModuleSectionHeader" textLabel="BkO-7y-au0" style="IBUITableViewCellStyleDefault" id="TUD-8E-zA5">
-                                <rect key="frame" x="0.0" y="28" width="667" height="53.5"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="53.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TUD-8E-zA5" id="5VY-Zq-Por">
-                                    <rect key="frame" x="0.0" y="0.0" width="667" height="53.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Requirements questions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BkO-7y-au0">
-                                            <rect key="frame" x="20" y="0.0" width="627" height="53.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="53.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <nil key="textColor"/>
@@ -34,32 +34,32 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionTableViewCell" rowHeight="159" id="9ny-np-Kam" customClass="QuestionTableViewCell" customModule="RateModules" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="81.5" width="667" height="159"/>
+                                <rect key="frame" x="0.0" y="81.5" width="375" height="159"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9ny-np-Kam" id="eIY-2B-ael">
-                                    <rect key="frame" x="0.0" y="0.0" width="667" height="159"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C4g-yw-55Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="667" height="159"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="io9-Ua-7JZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="667" height="143"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Pos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeI-5k-Cf7">
-                                                            <rect key="frame" x="0.0" y="61" width="95.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="30" width="53.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="¿Compila el proyecto sin errores?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-vg-NQ2">
-                                                            <rect key="frame" x="95.5" y="59.5" width="476" height="24"/>
+                                                            <rect key="frame" x="53.5" y="16" width="268" height="48"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <switch opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GxR-zt-Za9">
-                                                            <rect key="frame" x="571.5" y="56" width="97.5" height="31"/>
+                                                            <rect key="frame" x="321.5" y="24.5" width="55.5" height="31"/>
                                                             <connections>
                                                                 <action selector="didToggleSwitch:" destination="9ny-np-Kam" eventType="valueChanged" id="Gd6-Rz-omc"/>
                                                             </connections>
@@ -72,7 +72,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existe un proyecto de Xcode que puede compilarse sin errores (sin triángulos rojos tras el proceso de &quot;Build&quot;)." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1H-C6-krH">
-                                                    <rect key="frame" x="0.0" y="143" width="667" height="16"/>
+                                                    <rect key="frame" x="0.0" y="80.5" width="375" height="78.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -117,44 +117,50 @@
             <objects>
                 <viewController id="yUX-Wd-K0a" customClass="RateResultsViewController" customModule="RateModules" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlJ-hp-Dsu">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eki-ee-zi8">
-                                <rect key="frame" x="213.5" y="70" width="240.5" height="203"/>
+                                <rect key="frame" x="67.5" y="192" width="240.5" height="239"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYk-wN-nBB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x19-Pa-B1T">
-                                        <rect key="frame" x="0.0" y="0.0" width="240.5" height="100.5"/>
+                                        <rect key="frame" x="0.0" y="36" width="240.5" height="100.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="84"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8k-iY-JEB">
-                                        <rect key="frame" x="0.0" y="100.5" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="136.5" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de diseño: 3/5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji6-AB-wt5">
-                                        <rect key="frame" x="0.0" y="121" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="157" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de requisitos: 4/5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-Td-dJK">
-                                        <rect key="frame" x="0.0" y="141.5" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="177.5" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de estructura: 2/4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOY-Pf-9Zm">
-                                        <rect key="frame" x="0.0" y="162" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="198" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas de código limpio: 1/3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kso-XL-uvQ">
-                                        <rect key="frame" x="0.0" y="182.5" width="240.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="218.5" width="240.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -171,7 +177,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0n3-Qg-fby"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Doj-jU-tpl"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Doj-jU-tpl">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="lou-CY-kH0">
+                            <connections>
+                                <segue destination="CP6-Ro-Wkf" kind="unwind" unwindAction="unwindToRegisterWithUnwindSegue:" id="IvC-cN-fjo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cleanCodeRatioLabel" destination="Kso-XL-uvQ" id="HmV-BT-OK2"/>
                         <outlet property="codeStructureRatioLabel" destination="IOY-Pf-9Zm" id="uOe-dP-2su"/>
@@ -179,53 +191,55 @@
                         <outlet property="rateAsPercentLabel" destination="m8k-iY-JEB" id="Xvn-32-a7G"/>
                         <outlet property="requirementsRatioLabel" destination="pHX-Td-dJK" id="J4h-Sv-SdR"/>
                         <outlet property="resultEmojiLabel" destination="x19-Pa-B1T" id="iA4-w9-vhb"/>
+                        <outlet property="showStudentName" destination="tYk-wN-nBB" id="EEx-5S-6pG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jg0-0m-UPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CP6-Ro-Wkf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2120.6896551724139" y="-287.19999999999999"/>
+            <point key="canvasLocation" x="2119.1999999999998" y="-287.40629685157421"/>
         </scene>
         <!--Student-->
         <scene sceneID="emj-L5-m6k">
             <objects>
                 <viewController id="ssV-Tr-IGq" customClass="RegisterViewController" customModule="RateModules" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4KH-LG-IhY">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2w-We-dLM">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-em-ou4" userLabel="Content view">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="458"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="512"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Module:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ5-Ml-hph">
-                                                <rect key="frame" x="20" y="150" width="627" height="21"/>
+                                                <rect key="frame" x="20" y="150" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AR6-ph-94O">
-                                                <rect key="frame" x="20" y="196" width="627" height="162"/>
+                                                <rect key="frame" x="20" y="196" width="335" height="216"/>
                                                 <connections>
                                                     <outlet property="dataSource" destination="ssV-Tr-IGq" id="QSC-7h-oJj"/>
                                                     <outlet property="delegate" destination="ssV-Tr-IGq" id="KPo-wB-TVX"/>
                                                 </connections>
                                             </pickerView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZ5-KE-7kh">
-                                                <rect key="frame" x="20" y="408" width="627" height="30"/>
+                                                <rect key="frame" x="20" y="462" width="335" height="30"/>
                                                 <state key="normal" title="start rating"/>
                                                 <connections>
                                                     <action selector="startRatingButton:" destination="ssV-Tr-IGq" eventType="touchUpInside" id="KZs-vE-PzL"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpT-dV-Bl1">
-                                                <rect key="frame" x="20" y="66" width="627" height="34"/>
+                                                <rect key="frame" x="20" y="66" width="335" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmY-Lo-2Ft">
-                                                <rect key="frame" x="20" y="20" width="627" height="21"/>
+                                                <rect key="frame" x="20" y="20" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -276,8 +290,11 @@
                             <outletCollection property="gestureRecognizers" destination="ryO-ab-2hk" appends="YES" id="Wk6-YX-BaR"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Student" id="ea5-6o-g6m"/>
+                    <navigationItem key="navigationItem" title="Student" id="ea5-6o-g6m">
+                        <barButtonItem key="rightBarButtonItem" title="Result" id="v21-w3-LIt"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="studentNameTextField" destination="EpT-dV-Bl1" id="pl3-9W-4ao"/>
                         <segue destination="saZ-Bz-K9g" kind="show" identifier="showRateModule" id="z3k-wy-g8y"/>
                     </connections>
                 </viewController>
@@ -296,7 +313,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6pw-vU-3WB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="fHh-1F-ajv">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -8,18 +8,46 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class RegisterViewController: UIViewController {
     
     let modules: [Module] = [.module2A, .module2B , .module3A, .module3B]
-    var optionChoosed = Module.module2A
+    var optionChosed:Module = .module2A
     
+    @IBOutlet weak var studentNameTextField: UITextField!
+    
+    @IBAction func startRatingButton(_ sender: UIButton) {
+        performSegue(withIdentifier: RateModuleViewController.showRateModuleSegue, sender: self)
+    }
     @IBAction func tapWhenWriting(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        studentNameTextField.delegate = self
+       
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        studentNameTextField.text = ""
+    }
+    // MARK: - Navigation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == RateModuleViewController.showRateModuleSegue,
+     let rateModuleViewController = segue.destination as? RateModuleViewController else { return }
+        rateModuleViewController.optionChosed = optionChosed
+        rateModuleViewController.studentName = studentNameTextField.text
+    }
+    @IBAction func unwindToRegister(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
+
+}
+extension RegisterViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return modules[row].rawValue
     }
@@ -27,26 +55,16 @@ class RegisterViewController: UIViewController, UIPickerViewDataSource, UIPicker
         return modules.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        optionChoosed = modules[row]
-        print(optionChoosed)
+        
+        optionChosed = modules[row]
+      
     }
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBAction func startRatingButton(_ sender: UIButton) {
-        performSegue(withIdentifier: RateModuleViewController.showRateModuleSegue, sender: self)
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
+}
 
-       
-    }
+extension RegisterViewController: UITextFieldDelegate {
     
-
-    
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return	true
     }
-    
-
 }
