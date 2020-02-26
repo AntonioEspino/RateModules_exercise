@@ -19,10 +19,12 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var studentNameTextField: UITextField!
     @IBOutlet weak var startRatingOutlet: UIButton!
+    @IBOutlet weak var modulePicker: UIPickerView!
     
     // MARK : - Actions
     
     @IBAction func startRatingButton(_ sender: UIButton) {
+        optionChosed = modules[modulePicker.selectedRow(inComponent: 0)]
         performSegue(withIdentifier: RateModuleViewController.showRateModuleSegue, sender: self)
     }
     @IBAction func tapWhenWriting(_ sender: UITapGestureRecognizer) {
@@ -30,36 +32,39 @@ class RegisterViewController: UIViewController {
         updateUI()
     }
     
-     // MARK : - ViewControler Life Cycle
+    // MARK : - ViewControler Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         studentNameTextField.delegate = self
         updateUI()
     }
-
-     // MARK : - Update UI
+    
+    // MARK : - Update UI
     
     func updateUI () {
-           if studentNameTextField.text == "" {
-                        startRatingOutlet.isEnabled = false
-                    }else{
-                        startRatingOutlet.isEnabled = true
-                    }
-       }
+        if studentNameTextField.text == "" {
+            startRatingOutlet.isEnabled = false
+        }else{
+            startRatingOutlet.isEnabled = true
+        }
+    }
     
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == RateModuleViewController.showRateModuleSegue,
-     let rateModuleViewController = segue.destination as? RateModuleViewController else { return }
+            let rateModuleViewController = segue.destination as? RateModuleViewController else { return }
         rateModuleViewController.optionChosed = optionChosed
         rateModuleViewController.studentName = studentNameTextField.text
     }
-    @IBAction func unwindToRegister(unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindToRegisterfromRate(unwindSegue: UIStoryboardSegue) {
         studentNameTextField.text = ""
         startRatingOutlet.isEnabled = false    }
-
+    @IBAction func unwindToRegisterfromResultsList(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
 }
 
 // MARK : - DatePickerDelegate

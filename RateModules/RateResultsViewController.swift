@@ -14,7 +14,7 @@ class RateResultsViewController: UIViewController {
     var studentName: String?
     var optionChosed: Module?
     var result =  Result ()
-
+    
     @IBOutlet weak var resultEmojiLabel: UILabel!
     @IBOutlet weak var rateAsPercentLabel: UILabel!
     @IBOutlet weak var designRatioLabel: UILabel!
@@ -41,7 +41,7 @@ class RateResultsViewController: UIViewController {
         if !rateCalculator.hasPassed {
             rateAsPercentLabel.textColor = .red
         }
-
+        
         if rateCalculator.numberOfDesignQuestions > 0 {
             designRatioLabel.text = "Preguntas de diseño: \(rateCalculator.numberOfRightlyAnsweredDesignQuestions)/\(rateCalculator.numberOfDesignQuestions)"
         } else {
@@ -57,15 +57,21 @@ class RateResultsViewController: UIViewController {
         result.module = optionChosed?.rawValue ?? ""
         result.emoji = resultEmojiLabel.text!
         result.rate = String(rateCalculator.totalRatio*100)
-        print(result)
+        
+        if ResultsViewController.results == nil {
+            ResultsViewController.results = []
+            ResultsViewController.results?.append(result)
+        } else {
+            ResultsViewController.results?.append(result)
+        }
+        
         saveStudent(noteStudent: result)
     }
-
+    
     func saveStudent(noteStudent: Result) {
-         var listStudents: [Result] = Result.loadFromFile()
-         listStudents.append(noteStudent)
-         print(listStudents)
+        var listStudents: [Result] = Result.loadFromFile()
+        listStudents.append(noteStudent)
         Result.saveToFile(results: listStudents)
-     }
+    }
     
 }

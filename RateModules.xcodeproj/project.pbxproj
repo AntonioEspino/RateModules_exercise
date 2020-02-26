@@ -22,6 +22,7 @@
 		710E99DC2404925D002DE0A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E99DB2404925D002DE0A5 /* RegisterViewController.swift */; };
 		71355B042405811400397741 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71355B032405811400397741 /* ResultsViewController.swift */; };
 		71355B062405BAF200397741 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71355B052405BAF200397741 /* Result.swift */; };
+		7171295A24062ACD00F1C5F5 /* ResultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7171295924062ACD00F1C5F5 /* ResultViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		710E99DB2404925D002DE0A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		71355B032405811400397741 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		71355B052405BAF200397741 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7171295924062ACD00F1C5F5 /* ResultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				0BF7809023DE0C3C007F8E8E /* Question.swift */,
 				0BF7809223DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift */,
 				0BEE035B23DE0A08007C9E35 /* QuestionTableViewCell.swift */,
+				7171295924062ACD00F1C5F5 /* ResultViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				71355B042405811400397741 /* ResultsViewController.swift in Sources */,
 				0BF7809123DE0C3C007F8E8E /* Question.swift in Sources */,
 				710E99DC2404925D002DE0A5 /* RegisterViewController.swift in Sources */,
+				7171295A24062ACD00F1C5F5 /* ResultViewCell.swift in Sources */,
 				0BF7809923DE3FD2007F8E8E /* RateResultsViewController.swift in Sources */,
 				0BDF873023DE04E500FD9083 /* RateModuleViewController.swift in Sources */,
 				0BF7809323DE15A8007F8E8E /* QuestionTableViewCellDelegate.swift in Sources */,

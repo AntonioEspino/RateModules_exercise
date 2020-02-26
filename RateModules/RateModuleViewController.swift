@@ -14,7 +14,7 @@ class RateModuleViewController: UITableViewController {
     var state = State(module: Module.module3B)
     var optionChosed: Module?
     var studentName: String?
-   
+    
     
     override func viewWillAppear(_ animated: Bool) {
         if let optionChosed = optionChosed {
@@ -41,7 +41,7 @@ class RateModuleViewController: UITableViewController {
         
         index = state.codeStructureQuestions.firstIndex { $0.title == selectedQuestion.title }
         if let index = index {
-           state.codeStructureQuestions[index].isPassed = value
+            state.codeStructureQuestions[index].isPassed = value
             return
         }
         
@@ -65,7 +65,7 @@ class RateModuleViewController: UITableViewController {
                 numberOfRightlyAnsweredCleanCodeQuestions: state.cleanCodeQuestions.filter { $0.isPassed }.count)
             destination.studentName = studentName
             destination.optionChosed = optionChosed
-                
+            
         }
     }
 }
@@ -148,20 +148,20 @@ extension RateModuleViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       let header = tableView.dequeueReusableCell(withIdentifier: "RateModuleSectionHeader")!
-               switch section {
-                   case 0:
-                    header.textLabel?.text = state.hasDesignSection ? "Diseño (\(state.designQuestions?.count ?? 0))" : "Requisitos (\(state.requirementsQuestions.count))"
-                   case 1:
-                    header.textLabel?.text = state.hasDesignSection ? "Requisitos (\(state.requirementsQuestions.count))" : "Estructura de código (\(state.codeStructureQuestions.count))"
-                   case 2:
-                    header.textLabel?.text = state.hasDesignSection ? "Estructura de código (\(state.codeStructureQuestions.count))": "Código limpio (\(state.cleanCodeQuestions.count))"
-                   case 3:
-                    header.textLabel?.text = state.hasDesignSection ? "Código limpio (\(state.cleanCodeQuestions.count))" : ""
-                   default:
-                       fatalError("Unexpected section")
-               }
-               return header
+        let header = tableView.dequeueReusableCell(withIdentifier: "RateModuleSectionHeader")!
+        switch section {
+        case 0:
+            header.textLabel?.text = state.hasDesignSection ? "Diseño (\(state.designQuestions?.count ?? 0))" : "Requisitos (\(state.requirementsQuestions.count))"
+        case 1:
+            header.textLabel?.text = state.hasDesignSection ? "Requisitos (\(state.requirementsQuestions.count))" : "Estructura de código (\(state.codeStructureQuestions.count))"
+        case 2:
+            header.textLabel?.text = state.hasDesignSection ? "Estructura de código (\(state.codeStructureQuestions.count))": "Código limpio (\(state.cleanCodeQuestions.count))"
+        case 3:
+            header.textLabel?.text = state.hasDesignSection ? "Código limpio (\(state.cleanCodeQuestions.count))" : ""
+        default:
+            fatalError("Unexpected section")
+        }
+        return header
     }
 }
 
