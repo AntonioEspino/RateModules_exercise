@@ -11,6 +11,7 @@ import UIKit
 class ResultsViewController: UITableViewController {
     
     static var results: [Result]?
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
